@@ -1,0 +1,7 @@
+.test:hover {
+	test-decoration: underline;
+}
+
+.test{
+	cursor: pointer;
+}
