@@ -1,6 +1,21 @@
 import React from 'react';
 // import stlye './style.css';
 
+import ReactTextCollapse from 'react-text-collapse'
+
+
+const TEXT_COLLAPSE_OPTIONS = {
+  collapse: false,
+  collapseText: 'Read more about the space',
+  expandText: 'Hide',
+  minHeight: 10,
+  maxHeight: 650,
+  textStyle: {
+    color: "#008489",
+    fontSize: '16px',
+    fontWeight: 600,
+  }
+}
 
 
 class Listing extends React.Component {
@@ -72,6 +87,7 @@ class Listing extends React.Component {
 	      		<p>{this.props.listing.city_details}</p>
 	    	</div>
 
+        <ReactTextCollapse options={TEXT_COLLAPSE_OPTIONS}>
 
 	    	<div style={styles.space}>
 	      		<p>The space</p>
@@ -97,11 +113,11 @@ class Listing extends React.Component {
 	    	<div style={styles.listing_details}>
 	      		<p>{this.props.listing.other_details}</p>
 	    	</div>
-
+        </ReactTextCollapse>
+        <br/>
+        <br/>
         <a className="" style={styles.contact}>Contact Host</a>
 	    </div>
-
-
 
     )
   }
@@ -119,11 +135,11 @@ const styles = {
   	borderWidth: 1,
   	fontFamily: "'Roboto', sans-serif",
   	marginLeft: 94.500,
+    border: "0px 0px 1px 0px solid #EBEBEB",
   },roomType: {
   	fontSize: 12,
   	backgroundColor: "#FFFFFF",
   	fontFamily: "'Roboto',sans-serif",
- 
   	color: "#585a3a",
   	fontWeight: 800,
   	marginBottom:-30,
@@ -268,6 +284,7 @@ const styles = {
   	fontFamily: "'Roboto',sans-serif",
   	fontSize: 16,
   	fontWeight: 600,
+
   }
 };
 

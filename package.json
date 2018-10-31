@@ -35,7 +35,9 @@
     "react": "^15.4.2",
     "react-collapse": "^4.0.3",
     "react-dom": "^15.4.2",
-    "react-slide-toggle": "^0.1.13"
+    "react-motion": "^0.5.2",
+    "react-slide-toggle": "^0.1.13",
+    "react-text-collapse": "^0.5.0"
   },
   "bugs": {
     "url": "https://github.com/Staybnb/Description/issues"
