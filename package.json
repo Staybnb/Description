@@ -52,4 +52,3 @@
   }
 }
 
-// && mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -pSwamishri1781 -P 3306 < ./database-mysql/dummyData.js
