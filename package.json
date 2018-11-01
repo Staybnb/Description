@@ -6,7 +6,7 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "seed": "node ./database-mysql/dummyData.js"
+     "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < ./database-mysql/schema.sql",
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,9 @@
     "react": "^15.4.2",
     "react-collapse": "^4.0.3",
     "react-dom": "^15.4.2",
-    "react-slide-toggle": "^0.1.13"
+    "react-motion": "^0.5.2",
+    "react-slide-toggle": "^0.1.13",
+    "react-text-collapse": "^0.5.0"
   },
   "bugs": {
     "url": "https://github.com/Staybnb/Description/issues"
@@ -48,3 +50,5 @@
     "preset": "jest-puppeteer"
   }
 }
+
+// && mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -pSwamishri1781 -P 3306 < ./database-mysql/dummyData.js

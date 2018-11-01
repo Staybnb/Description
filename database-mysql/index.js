@@ -1,10 +1,13 @@
 var mysql = require('mysql');
 
+var password = require('../../proxy/config.js').amazonPassword;
+
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'listings'
+  host     : 'listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com',
+  user     : 'dhpatel15',
+  password : password,
+  database : 'listings',
+  port: 3306
 });
 
 var selectAll = function(id, callback) {
