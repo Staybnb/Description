@@ -58,9 +58,9 @@ class Listing extends React.Component {
 
 	    	<div style={styles.iconContainter}>
     			<div style={styles.iconContainer}>
-    				<img style={styles.imgIcon} src="./guests.png" />
+    				<img style={styles.imgIcon} src="../../dist/guests.png" />
     					<p style={styles.sampleCont}>4 Guests</p>
-    				<img style={styles.imgIcon} src="./bedrooms.png" />
+    				<img style={styles.imgIcon} src="bedrooms.png" />
     					<p style={styles.sampleCont}>1 Bedroom</p>
     				<img style={styles.imgIcon} src="./beds.png" />
     					<p style={styles.sampleCont}>2 Beds</p>

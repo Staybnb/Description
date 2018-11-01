@@ -25,7 +25,7 @@ app.get('/listing', function(req, res) {
 });
 
 
-app.listen(4000, function() {
-  console.log('listening on port 4000!');
+app.listen(process.env.PORT || 4000, function() {
+  console.log(`listening on port ${process.env.PORT || 4000}`);
 });
 

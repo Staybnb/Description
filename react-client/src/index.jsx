@@ -12,9 +12,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {   
+    const port = process.env.PORT || 4001;
     var ID = window.location.href.slice(-3);
-
-    if(!(window.location.href === "http://localhost:3000/listing") ){
+    
+    if(!(window.location.href === `http://localhost:${port}/listing`) ){
       axios.get('/description', {
         params: {
           id: ID
@@ -38,4 +39,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+window.Description = App;

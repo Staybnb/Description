@@ -6,7 +6,15 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
+<<<<<<< HEAD
     "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < /database-mysql/schema.sql"
+=======
+<<<<<<< HEAD
+     "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < ./database-mysql/schema.sql",
+=======
+    "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < ./database-mysql/schema.sql"
+>>>>>>> 6b2da7d9d603b5877f8e5b76209b7114939cf383
+>>>>>>> cb62baa6bd12913c1b1221345f28bf18dc1b91ef
   },
   "repository": {
     "type": "git",
@@ -37,8 +45,12 @@
     "react-dom": "^15.4.2",
     "react-motion": "^0.5.2",
     "react-slide-toggle": "^0.1.13",
+<<<<<<< HEAD
+    "react-text-collapse": "^0.5.0"
+=======
     "react-text-collapse": "^0.5.0",
     "webpack": "^2.2.1"
+>>>>>>> 6b2da7d9d603b5877f8e5b76209b7114939cf383
   },
   "bugs": {
     "url": "https://github.com/Staybnb/Description/issues"
@@ -51,3 +63,5 @@
     "preset": "jest-puppeteer"
   }
 }
+
+// && mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -pSwamishri1781 -P 3306 < ./database-mysql/dummyData.js
