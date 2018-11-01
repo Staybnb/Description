@@ -6,7 +6,7 @@
   "scripts": {
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/index.js",
-    "seed": "node ./database-mysql/dummyData.js"
+    "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < ./database-mysql/schema.sql"
   },
   "repository": {
     "type": "git",
@@ -15,21 +15,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
-    "file-loader": "^2.0.0",
-    "image-webpack-loader": "^4.4.0",
-    "jest": "^23.6.0",
-    "jest-puppeteer": "^3.4.0",
-    "webpack": "^2.2.1"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.0",
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.4.0",
     "mdbreact": "^4.8.2",
+    "module-example": "^1.0.0",
     "mysql": "^2.13.0",
     "puppeteer": "^1.9.0",
     "react": "^15.4.2",
@@ -37,7 +37,8 @@
     "react-dom": "^15.4.2",
     "react-motion": "^0.5.2",
     "react-slide-toggle": "^0.1.13",
-    "react-text-collapse": "^0.5.0"
+    "react-text-collapse": "^0.5.0",
+    "webpack": "^2.2.1"
   },
   "bugs": {
     "url": "https://github.com/Staybnb/Description/issues"
