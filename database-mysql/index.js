@@ -5,7 +5,11 @@ var password = require('../../proxy/config.js').amazonPassword;
 var connection = mysql.createConnection({
   host     : 'listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com',
   user     : 'dhpatel15',
+<<<<<<< HEAD
   password : password,
+=======
+  password : 'Swamishri1781',
+>>>>>>> 6b2da7d9d603b5877f8e5b76209b7114939cf383
   database : 'listings',
   port: 3306
 });
