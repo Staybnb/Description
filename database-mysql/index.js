@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 
-var password = require('../../proxy/config.js').amazonPassword;
+var password = require('../config.js').amazonPassword;
 
 var connection = mysql.createConnection({
   host     : 'listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com',
