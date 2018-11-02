@@ -21,8 +21,18 @@ app.get('/description', function(req, res) {
 
 
 app.get('/listing', function(req, res) {
-		res.sendFile(path.join(__dirname, '../react-client/dist/index.html'))
+		res.sendFile(path.join(__dirname, '/../react-client/dist/index.html'))
 });
+
+
+// app.all('/*', function(req, res, next) {
+//   res.header('Access-Control-Allow-Origin', '*');
+//   next();
+// });
+
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../react-client/dist/index.html"));
+// });
 
 
 app.listen(process.env.PORT || 4000, function() {

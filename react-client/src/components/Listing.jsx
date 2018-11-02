@@ -58,7 +58,7 @@ class Listing extends React.Component {
 
 	    	<div style={styles.iconContainter}>
     			<div style={styles.iconContainer}>
-    				<img style={styles.imgIcon} src="../../dist/guests.png" />
+    				<img style={styles.imgIcon} src="./guests.png" />
     					<p style={styles.sampleCont}>4 Guests</p>
     				<img style={styles.imgIcon} src="bedrooms.png" />
     					<p style={styles.sampleCont}>1 Bedroom</p>
@@ -78,7 +78,7 @@ class Listing extends React.Component {
 
 	    		<div style={styles.helpfulContainer}>
 	    			<div style={styles.helpfulText}>Helpful</div>
-	    			<img style={styles.helpfulIcon} src="./thumps-up.png" />
+	    			<img style={styles.helpfulIcon} src="./thumbs-up.png" />
 	    			<div style={styles.notHelpfulText}>· Not helpful</div>
 	    		</div>
 	    	</div>

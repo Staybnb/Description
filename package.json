@@ -16,7 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.6.0",
-    "jest-puppeteer": "^3.4.0"
+    "jest-puppeteer": "^3.4.0",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -51,4 +52,3 @@
     "preset": "jest-puppeteer"
   }
 }
-
