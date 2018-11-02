@@ -9,7 +9,7 @@ const TEXT_COLLAPSE_OPTIONS = {
   collapseText: 'Read more about the space',
   expandText: 'Hide',
   minHeight: 10,
-  maxHeight: 650,
+  maxHeight: 730,
   textStyle: {
     color: "#008489",
     fontSize: '16px',
