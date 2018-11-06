@@ -91,7 +91,7 @@ var other_details =[
 ]
 
 var ID = 1;
-for(var i = 0; i < 100; i++){
+for (var i = 0; i < 100; i++) {
  	var randroomType = room_type[Math.floor(Math.random() * room_type.length)];
  	var randname = names[Math.floor(Math.random() * names.length)];
  	var randroom_type_details = room_type_details[Math.floor(Math.random() * room_type_details.length)];
@@ -102,14 +102,13 @@ for(var i = 0; i < 100; i++){
  	var randinteraction_guests_details = interaction_guests_details[Math.floor(Math.random() * interaction_guests_details.length)];
  	var randother_details = other_details[Math.floor(Math.random() * other_details.length)];
  	db.interstAll(ID,randname, randroomType, randroom_type_details, randcity, randcity_details, randlisting_details, randguest_access_details, randinteraction_guests_details, randother_details, function(err, result){
- 		if(err){
- 			console.log(err)
- 		}else{
- 			console.log(result)
+ 		if (err) {
+ 			console.log(err);
+ 		} else {
+ 			console.log(result);
  		}
  	})
- 	ID++
-
+ 	ID++;
 }
 // randname, randroom_type_details, randcity, randcity_details, randlisting_details, randguest_access_details, randinteraction_guests_details, randother_details
 

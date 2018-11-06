@@ -1,7 +1,7 @@
 {
-  "name": "airbnb-lisitng-description",
+  "name": "topbunk-listing-description",
   "version": "1.0.0",
-  "description": "Airbnb Listing Description Clone",
+  "description": "Airbnb Listing Clone - Description Component",
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
@@ -10,11 +10,11 @@
     "listpm2": "pm2 list",
     "pm2server": "pm2 show server",
     "pm2stop": "pm2 stop 0",
-    "seed": "mysql -h listings.cgs4awlnkox5.us-east-2.rds.amazonaws.com -u dhpatel15 -p -P 3306 < ./database-mysql/schema.sql"
+    "seed": "mysql -u root -p < ./database-mysql/schema.sql && node ./database-mysql/dummyData.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Staybnb/Description.git"
+    "url": "git+https://github.com/TopBunkNYC/Description.git"
   },
   "author": "",
   "license": "ISC",
@@ -46,9 +46,9 @@
     "webpack": "^2.2.1"
   },
   "bugs": {
-    "url": "https://github.com/Staybnb/Description/issues"
+    "url": "https://github.com/TopBunkNYC/Description/issues"
   },
-  "homepage": "https://github.com/Staybnb/Description#readme",
+  "homepage": "https://github.com/TopBunkNYC/Description#readme",
   "jest": {
     "roots": [
       "test/"
