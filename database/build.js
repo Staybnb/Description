@@ -20,20 +20,24 @@ model.listingSchema.sync({force: true})
   .then(() => {
     (async () => {
       for (let i = 0; i < 10000; i++) {
-        const location = faker.address.city();
-        await model.addListing({
-          roomType: randomize(roomType),
-          name: faker.name.findName(),
-          roomTypeDetails: createListing(location),
-          city: location,
-          cityDetails: faker.lorem.paragraphs(),
-          listingDetails: faker.lorem.paragraphs(),
-          guestAccess: faker.lorem.paragraphs(),
-          interaction: faker.lorem.paragraphs(),
-          other: faker.lorem.paragraphs(),
-          avatar: faker.image.avatar()
-        });
-        if (i % 1000 === 0) console.log(i);
+        let arr = [];
+        for (let x = 0; x < 1000; x++) {
+          const location = faker.address.city();
+          arr.push({
+            room_type: randomize(roomType),
+            user_name: faker.name.findName(),
+            room_type_details: createListing(location),
+            city: location,
+            city_details: faker.lorem.paragraphs(),
+            listing_details: faker.lorem.paragraphs(),
+            guest_access_details: faker.lorem.paragraphs(),
+            interaction_guests_details: faker.lorem.paragraphs(),
+            other_details: faker.lorem.paragraphs(),
+            avatar: faker.image.avatar()
+          })
+        }
+        await model.addBulkListing(arr);
+        console.log(i);
       }
       sequelize.close();
     })();

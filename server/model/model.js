@@ -60,6 +60,11 @@ const addListing = (data) => {
     .catch((err) => console.log(err));
 };
 
+const addBulkListing = (data) => {
+  return Listing.bulkCreate(data)
+    .catch((err) => console.log(err));
+};
+
 const deleteListing = (id) => {
   return Listing.destroy({
     where: {id: id}
@@ -78,6 +83,7 @@ const updateListing = (data) => {
 
 module.exports.getListing = getListing;
 module.exports.addListing = addListing;
+module.exports.addBulkListing = addBulkListing;
 module.exports.deleteListing = deleteListing;
 module.exports.updateListing = updateListing;
 module.exports.listingSchema = Listing;
