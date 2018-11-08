@@ -67,7 +67,8 @@ const deleteListing = (id) => {
     .catch((err) => console.log(err));
 };
 
-const updateListing = (id, changes) => {
+const updateListing = (data) => {
+  let {id, ...changes} = data;
   return Listing.findById(id)
     .then((listing) => {
       listing.updateAttributes(changes);
