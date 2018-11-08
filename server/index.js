@@ -1,7 +1,8 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var db = require('../database');
-var path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const model = require('./model/model.js');
+const path = require('path');
+const port = process.env.PORT || 7000;
 
 const app = express();
 app.use(express.static(__dirname + '/../react-client/dist'));

@@ -47,7 +47,7 @@ class Listing extends React.Component {
 		      </div>
 					<div style={styles.iconeNameContainer}>
       			<div style={styles.avatar}>
-      				<img style={styles.avatar} src={this.props.listing.avatar/>
+      				<img style={styles.avatar} src={this.props.listing.avatar}/>
       			</div>
       			<div style={styles.nameText}>{this.props.listing.user_name}</div>
       		</div>

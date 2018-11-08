@@ -24,7 +24,7 @@ class App extends React.Component {
       .then(({data}) => {
         console.log("Axios", data)
         this.setState({
-            listing: data[0]
+            listing: data
         })
       })
     }
