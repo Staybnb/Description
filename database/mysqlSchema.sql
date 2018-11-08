@@ -5,8 +5,7 @@ CREATE DATABASE listings;
 USE listings;
 
 CREATE TABLE listing_description (
-	id INT(11) AUTO_INCREMENT NOT NULL, 
-	unique_ID INT(10) UNIQUE,
+	id INT(11) AUTO_INCREMENT NOT NULL,
 	room_type MEDIUMTEXT,
 	user_name MEDIUMTEXT,
 	room_type_details MEDIUMTEXT,
@@ -16,5 +15,6 @@ CREATE TABLE listing_description (
 	guest_access_details MEDIUMTEXT,
 	interaction_guests_details MEDIUMTEXT,
 	other_details MEDIUMTEXT,
+	avatar MEDIUMTEXT,
 	PRIMARY KEY(`id`)
 );
