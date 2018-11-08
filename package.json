@@ -10,7 +10,8 @@
     "listpm2": "pm2 list",
     "pm2server": "pm2 show server",
     "pm2stop": "pm2 stop 0",
-    "seed": "mysql -u root -p < ./database-mysql/schema.sql && node ./database-mysql/dummyData.js"
+    "seed mysql": "mysql -u root -p < ./database/mysqlSchema.sql && node ./database/mysqlBuild.js",
+    "seed postgres": "psql topbunk < ./database/postgresSchema.sql && node ./database/postgresBuild.js"
   },
   "repository": {
     "type": "git",
@@ -31,11 +32,13 @@
     "babel-preset-react": "^6.23.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.0",
+    "faker": "^4.1.0",
     "file-loader": "^2.0.0",
     "image-webpack-loader": "^4.4.0",
     "mdbreact": "^4.8.2",
     "module-example": "^1.0.0",
     "mysql": "^2.13.0",
+    "pg": "^7.6.1",
     "puppeteer": "^1.9.0",
     "react": "^15.4.2",
     "react-collapse": "^4.0.3",
@@ -43,6 +46,7 @@
     "react-motion": "^0.5.2",
     "react-slide-toggle": "^0.1.13",
     "react-text-collapse": "^0.5.0",
+    "sequelize": "^4.41.1",
     "webpack": "^2.2.1"
   },
   "bugs": {
