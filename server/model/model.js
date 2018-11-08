@@ -40,11 +40,7 @@ const Listing = db.define('listing', {
 });
 
 const getListing = function(id) {
-  return Listing.findAll({
-    where: {
-      id: id
-    }
-  });
+  return Listing.findById(id);
 };
 
 const addListing = function(data) {
