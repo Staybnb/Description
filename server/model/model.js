@@ -39,11 +39,12 @@ const Listing = db.define('listing', {
   }
 });
 
-const getListing = function(id) {
-  return Listing.findById(id);
+const getListing = (id) => {
+  return Listing.findById(id)
+    .catch((err) => console.log(err));
 };
 
-const addListing = function(data) {
+const addListing = (data) => {
   return Listing.create({
     room_type: data.roomType,
     user_name: data.name,
@@ -55,9 +56,27 @@ const addListing = function(data) {
     interaction_guests_details: data.interaction,
     other_details: data.other,
     avatar: data.avatar
-  });
+  })
+    .catch((err) => console.log(err));
+};
+
+const deleteListing = (id) => {
+  return Listing.destroy({
+    where: {id: id}
+  })
+    .catch((err) => console.log(err));
+};
+
+const updateListing = (id, changes) => {
+  return Listing.findById(id)
+    .then((listing) => {
+      listing.updateAttributes(changes);
+    })
+    .catch((err) => console.log(err));
 };
 
 module.exports.getListing = getListing;
 module.exports.addListing = addListing;
+module.exports.deleteListing = deleteListing;
+module.exports.updateListing = updateListing;
 module.exports.listingSchema = Listing;
