@@ -23,24 +23,24 @@ app.get('/description', function(req, res) {
 
 app.post('/description', function(req, res) {
 	model.addListing(req.body)
-		.then(() => {
-			res.send();
+		.then((response) => {
+			res.send(response);
 		})
 		.catch((err) => console.log(err));
 });
 
 app.put('/description', function(req, res) {
 	model.updateListing(req.body)
-		.then(() => {
-			res.send();
+		.then((response) => {
+			res.send(response);
 		})
 		.catch((err) => console.log(err));
 });
 
 app.delete('/description', function(req, res) {
 	model.deleteListing(req.query.id)
-		.then(() => {
-			res.send();
+		.then((response) => {
+			res.send(response);
 		})
 		.catch((err) => console.log(err));
 });
