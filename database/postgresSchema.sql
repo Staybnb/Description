@@ -5,7 +5,7 @@ DROP SCHEMA IF EXISTS topbunk;
 CREATE SCHEMA topbunk;
 
 CREATE TABLE topbunk.listings (
-	id SERIAL PRIMARY KEY,
+	id SERIAL,
 	room_type TEXT,
 	user_name TEXT,
 	room_type_details TEXT,
