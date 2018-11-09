@@ -23,15 +23,19 @@ const createListing = (location) => {
       const location = faker.address.city();
       arr.push({
         room_type: randomize(roomType),
-        user_name: faker.name.findName(),
-        room_type_details: createListing(location),
+        username: faker.name.findName(),
+        room_details: createListing(location),
         city: location,
         city_details: faker.lorem.paragraphs(),
         listing_details: faker.lorem.paragraphs(),
-        guest_access_details: faker.lorem.paragraphs(),
-        interaction_guests_details: faker.lorem.paragraphs(),
-        other_details: faker.lorem.paragraphs(),
-        avatar: faker.image.avatar()
+        guest_access: faker.lorem.paragraphs(),
+        interaction: faker.lorem.paragraphs(),
+        other: faker.lorem.paragraphs(),
+        avatar: faker.image.avatar(),
+        num_guests: randomize([1, 2, 3, 4, 5, 6, 7, 8]),
+        num_bedrooms: randomize([1, 2, 3]),
+        num_beds: randomize([1, 2, 3, 4, 5, 6]),
+        num_baths: randomize([1, 2])
       })
     }
     // await knex.batchInsert('topbunk.listings', arr, 500);
