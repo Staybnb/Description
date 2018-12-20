@@ -10,7 +10,7 @@ This component displays the desription for each listing in the Staybnb applicati
   - https://github.com/Staybnb/Reviews
   
 ### Launching the application locally
-Before the microservice can be run, a MySQL database needs to be set up to store the description table. Follow the steps below to create a schema and populate the table.
+Before the microservice can be run, a MySQL database needs to be set up to store the description table. Follow the steps below to initialize a schema and populate the table.
 
 ```sh
 # download dependencies
