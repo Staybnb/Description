@@ -10,11 +10,15 @@ This component displays the desription for each listing in the Staybnb applicati
   - https://github.com/Staybnb/Reviews
   
 ### Launching the application locally
-Before the microservice can be run, a MySQL database needs to be set up to store the description table. Set up the local database with username 'root' and follow the steps below to populate it
+Before the microservice can be run, a MySQL database needs to be set up to store the description table. Follow the steps below to create a schema and populate the table.
 
 ```sh
 # download dependencies
 npm install
+
+# set up MySQL schema
+go to your root directory
+mysql -u root < database-mysql/schema.sql
 
 # populate database
 npm run seed
